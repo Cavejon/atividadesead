@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,200&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&amp;display=swap');
+
+/*CORPO DO SITE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+/*CORPO DO SITE*/
+/*GRID*/
+.row {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+
+/*GRID*/
+/*CARD*/
+.card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 6%;
+  margin: 3%;
+  width: 85%;
+  transition: all 0.3s ease-out;
+}
+
+.card p {
+  color: #a3a5ae;
+  font-size: 16px;
+}
+
+.yellow {
+  border-left: 3px solid #f6d86b;
+}
+
+/*CARD*/
+
+/*IMAGEM DO CARD*/
+.image {
+  float: right;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+/*-------------*/
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: none;
+
+}
+
+.popup .conteudo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+}
+
+/*Fundo da pop-up*/
+.popup-wrapper {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+h2 {
+  font-family: 'Inter';
+  font-size: 20px;
+  padding: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 0 ! important
+}
+
+/*botão clique me*/
+button {
+  display: flex;
+  margin: 20px auto;
+  color: white;
+  border: 1px solid #f6d86e;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
+  top: 27%;
+  position: relative;
+  left: 7.5%;
+  font-family: 'Inter';
+  width: 30%;
+  background-color: #f6d86b;
+}
+
+/*fechar popup*/
+
+.fechar-popup {
+  position: absolute;
+  cursor: pointer;
+  background-color: #f6d86b;
+  left: 91%;
+  top: 89.5%;
+  color: white;
+  width: 7%;
+}
+
+/*exec*/
+pre {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/*responsividade dos cards*/
+@media screen and (max-whidht: 1342px) {
+  .row .card {
+    width: 22%;
+  }
+
+  .abrir-popup {
+    width: 50%;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .popup {
+    width: 100%;
+  }
+
+  .conteudo{
+    font-size: 9px;
+  }
+  .fechar-popup{
+    left: 80%;
+    width: 60px;
+  }
+  
+}
+
+
+
+/*NAV BAR RESPONSIVE COM HAMBURGUER*/
+
+nav{
+  background: #5434af;
+	height: 50px;
+	width: 100%;
+  
+}
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+  display: flex;
+  list-style: none;
+  padding: 15px 13px;
+  
+}
+
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	
+}
+a.active, a:hover {
+	background: #1d075f;
+	transition: .5s;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+/*
+@media  (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #1d075f;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #5434af;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+*/

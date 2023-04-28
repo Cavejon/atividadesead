@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  background-image: linear-gradient(45deg, #7175da, #9790F2);
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/*NAV SUPERIOR*/
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.topnav a.active {
+  background-color: #36bba6;
+  color: white;
+}
+
+/*---------------------------------------*/
+
+/*card de atividades*/
+.card-atividades {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+  width: 700px;
+}
+
+.card h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.course h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.card-preview {
+  background-color: #2A265F;
+  color: #fff;
+  padding: 30px;
+  max-width: 250px;
+}
+
+.card-preview a {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.card-info {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+
+/*Botão de continue*/
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  border-style: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2A265F;
+  border-radius: 50px;
+  z-index: -2;
+
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #0cf;
+  transition: all 0.3s;
+  border-radius: 50px;
+  z-index: -1;
+
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:hover:before {
+  width: 100%;
+}
+
+/**********************************/
+/* O contêiner de cartão flip - defina a largura e a altura como quiser.
+ Adicionamos a propriedade border para demonstrar que o próprio flip vai
+ pronto para uso ao passar o mouse (remova a perspectiva se não quiser o efeito 3D */
+
+ .flip-card {
+  background-color: transparent;
+  width: 700px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+/* Este Container é necessário para posicionar a frente e o verso */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/*flip horizontal ao mover o mouse sobre a caixa de flip container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Posição da frente e do verso */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Estilo do verso do card */
+.flip-card-back {
+  background-color: linear-gradient(45deg, #7175da, #9790F2);
+  ;
+  transform: rotateY(180deg);
+
+}
+/*imagem do card*/
+.jsImg {
+  border-radius: 20px;
+  width:700px;
+  height:200px;
+}
+
+@media screen and (max-width: 500px){
+  .flip-card{
+    width: 90%;
+    padding: 0;
+    left: 0px;
+  }
+  
+  .jsImg{
+    width:90%;
+  }
+
+}

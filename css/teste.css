@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-weight: light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, #e6d3f9, #d8caf6, #c8c2f3, #b7baef, #a4b2ec, #9faeec, #9babed, #96a7ed, #a3a6f0, #b1a4f2, #bfa2f2, #cea0f1);
+}
+
+.container {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+  background: linear-gradient(to right bottom, #9e66c6, #6027e1);
+  font-size: 14px;
+  height: 464px;
+  width: 280px;
+  display: flex;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 26%;
+  border: 1px solid #BD6EF0;
+  background-color: #BD6EF0;
+  opacity: 1;
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 51%;
+  left: 24%;
+  top: 5%;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+  animation: rotate 2s ease 0s 1 normal forwards;
+}
+
+
+.btn {
+
+
+  border: none;
+  height: 40px;
+  background: #5da3f2;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: white;
+  font-size: 12px;
+  padding: 12px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 280px;
+  position: absolute;
+  top: 424px;
+  left: 0;
+}
+
+
+.btn:hover {
+  background: #6babf3;
+}
+
+.btn:active {
+  background: #5da3f2;
+}
+
+.btn:disabled {
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'Inter';
+}
+
+p {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Inter';
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+
+
+.icon__container i {
+  font-size: 80px;
+  box-sizing: border-box;
+}
+
+.icon__container i:hover {
+  animation: rotate 2s ease 0s 1 normal forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.navigation-buttons .previous {
+  position: absolute;
+  z-index: 10;
+  font-size: 25px;
+  top: 83%;
+  left: 10px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.navigation-buttons .next {
+  right: 10px;
+  position: absolute;
+  font-size: 25px;
+  z-index: 10;
+  top: 83%;
+}
+
+.navigation-buttons .nav-btn {
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.navigation .nav-btn:hover {
+  background: white;
+}
+
+/*-------------------*/
+/* Slideshow container */
+

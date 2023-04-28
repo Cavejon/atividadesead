@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from atividadesead.netlify.app/pages/jsexerc by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Apr 2023 14:02:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.9.0/css/all.css"
+    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/jsStyle.css">
+
+  <title>Exercicios</title>
+</head>
+
+<body>
+  <!--NAV BAR COM TEXTOS-->
+  <nav>
+		<ul>
+			<li><a  href="/index.html">Linguagens</a></li>
+		</ul>
+	</nav>
+  <!--FIM NAV BAR-->
+  <!--COMEÇO DOS CONTEÚDOS-->
+  <div class="row">
+    <div class="card yellow">
+      <h2>Atividade 1</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>1- Crie uma estrutura de controle de fluxo switch para executar diferentes blocos de código onde a
+            variavel
+            seja refrigerante, ou sorvete ou suco e caso não tenha nenhuma das opções acima então informe produto
+            esgotado por favor selecione outro.</h2>
+          <pre>
+            <code>
+        let produto = prompt("Selecione um produto: ");
+        
+        switch (produto) {
+          case "refrigerante":
+            console.log("Você selecionou refrigerante!");
+            break;
+          case "sorvete":
+            console.log("Você selecionou sorvete!");
+            break;
+          case "suco":
+            console.log("Você selecionou suco!");
+            break;
+          default:
+            console.log("Produto esgotado. Por favor, selecione outro.");
+            break;
+        }
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 2</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 3</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>3- Crie uma função que divida 2 valores , caso o divisor seja o número zero , não deixe realizar a
+            divisão.</h2>
+          <pre>
+            <code>
+              function dividir(dividendo, divisor) {
+                if (divisor === 0) {
+                  return "Não é possível realizar a divisão por zero";
+                } else {
+                  return dividendo / divisor;
+                }
+              }
+          </code>
+        </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 4</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>4- Crie uma estrutura de repetição para imprimir os números de 1 a 1000, utilizando For.</h2>
+          <pre>
+            <code>
+              for (let numero = 1; numero <= 1000; numero++) {
+                console.log(numero);
+              }
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+   
+    <div class="card yellow">
+      <h2>Atividade 5</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>5- Declare um objeto com propriedades e imprima a seguinte informação:
+            <BR>
+            "O usuário mora em Joinville / SC, no bairro Centro, na rua "Rua dos Pinheiros" com nº 123."
+          </h2>
+          <pre>
+            <code>
+              const usuario = {
+                cidade: 'Joinville',
+                estado: 'SC',
+                bairro: 'Centro',
+                rua: 'Rua dos Pinheiros',
+                numero: 123
+              };
+              console.log(`O usuário mora em ${usuario.cidade} / ${usuario.estado}, no bairro ${usuario.bairro}, 
+              na rua "${usuario.rua}" com nº ${usuario.numero}.`);
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 6</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>6- Crie uma constante com o tipo primitivo string e imprima o valor dela no console e no alert</h2>
+          <pre>
+            <code>
+              const minhaString = "Olá, mundo!";
+
+              console.log(minhaString);
+
+              alert(minhaString);
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 7</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>7- Utilize operadores lógicos para fazer comparações onde caso o usuario tenha nota 7 ele passou de ano,
+            caso ele tenha nota 5 ele ficou de recuperação, e caso ele tenha nota abaixo de 5 ele ficou reprovado.</h2>
+          <pre>
+            <code>
+              let nota = 6; // aqui você pode definir a nota do usuário
+
+              if (nota >= 7) {
+              console.log("Passou de ano"); // se a nota for maior ou igual a 7, passou de ano
+              } else if (nota >= 5 && nota < 7) {
+              console.log("Ficou de recuperação"); // se a nota estiver entre 5 e 6.9, ficou de recuperação
+              } else {
+              console.log("Reprovado"); // se a nota for menor que 5, reprovado
+              }
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 8</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 9</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 10</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 11</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 12</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 13</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 14</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 15</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 16</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 17</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 18</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 19</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 20</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card yellow">
+      <h2>Atividade 21</h2>
+      <p>javascript</p>
+      <img class="image" src="../imgs/JavaScript.png" />
+      <button class="abrir-popup" id="model-btn">Abrir exercício</button>
+      <div class="popup">
+        <div class="conteudo">
+          <h2>2- Crie uma função para subtrair 2 valores</h2>
+          <pre>
+            <code>
+              function subtrair(a, b) {
+              return a - b;
+              }    
+            </code>
+          </pre>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+
+
+<!--Termino da row-->
+  </div>
+
+  <script src="../JS/popup.js"></script>
+</body>
+
+
+<!-- Mirrored from atividadesead.netlify.app/pages/jsexerc by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Apr 2023 14:02:24 GMT -->
+</html>
